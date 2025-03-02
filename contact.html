@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kiya Gooden">
+    <meta name="description" content="Get in touch with Swiss Valley Resort. Contact us for reservations, inquiries, and more.">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Contact Us | Swiss Valley Resort</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="wrapper">
+        <h1>Swiss Valley Resort</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section class="content">
+            <h2>We’d Love to Hear From You</h2>
+            <p>Have questions about your stay or want to book a reservation? Contact us using the form below.</p>
+            <div class="image-box">
+                <img src="images/swiss-peak.jpg" alt="A cozy Swiss Peak surrounded by mountains and trees" class="left-image">
+        </section>
+
+        <!-- Contact Form -->
+        <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="blank">
+        <section class="form-section">
+            <form action="submit-form.php" method="POST">
+                <div class="left-content">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="phone" name="phone" required>
+
+                    
+                </div>
+
+                <div class="right-content">
+                    <label>Preferred Contact Method:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="email-option" name="contact-method" value="email">
+                        <label for="email-option">Email</label>
+
+                        <input type="radio" id="phone-option" name="contact-method" value="phone">
+                        <label for="phone-option">Phone</label>
+
+                    </div>
+                </div>
+                <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                <!-- Submit Button -->
+                <div class="button-container">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2023 - Swiss Valley Resort</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+
+</body>
+</html>
